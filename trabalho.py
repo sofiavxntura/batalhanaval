@@ -25,6 +25,7 @@ print(MatrizUser)
 print()
 
 while desativados < 4: 
+    print()
     linha = int(input("Insira a linha da matriz. (1 a 6) "))
     coluna = int(input("Insira a coluna da matriz. (1 a 6) "))
     print()
@@ -41,6 +42,11 @@ while desativados < 4:
             tentativas += 1
             print(MatrizUser)
             print(f"Satélites desativados: {desativados}\nTentativas: {tentativas}")
+            
+        elif MatrizUser[linha-1][coluna-1] == '.':
+            print("Posição já checada!")
+            pass
+        
         else: #Matriz[l][c] == 0
             MatrizUser[linha-1][coluna-1] = '.'
             print(MatrizUser)
