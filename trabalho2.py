@@ -1,5 +1,5 @@
 import random
-#obs: peco pro user colocar um numero de 1 a 6, mas corrijo depois "-1"
+#obs: peco pro user colocar um numero de 1 a 6
 #obs2: troquei print(matrizuser) por um codigo de 4 linhas com for (usado para deixar a matriz "bonita")
 
 Matriz = [[0 for i in range (0,6)] for j in range(0,6)] #inicializar matriz c/ 0
