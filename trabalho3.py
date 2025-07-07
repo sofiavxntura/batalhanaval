@@ -1,5 +1,7 @@
 import random
+#obs: troquei para o usuario pedir de 1 a 6 ao inves de 0 a 5
 
+# versao oculta da matriz
 Matriz = [[0 for i in range (0,7)] for j in range(0,7)] #inicializar matriz c/ 0
 aux = 0
 
@@ -11,7 +13,8 @@ while aux < 4:
     else:
         Matriz[n1][n2] = 1
         aux += 1
-        
+
+# versao do usuario
 MatrizUser = [['?' for i in range(0,7)] for j in range(0,7)]
 
 for i in range(7): #colocar os números em linhas e colunas para melhorar a UX
